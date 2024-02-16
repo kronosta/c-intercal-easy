@@ -1,2 +1,11 @@
-# c-intercal-easy
-Easier way to install c-intercal
+C-INTERCAL can be a bit difficult to compile and install. Here's a combination of source code updates by Ais523 (to make it work on modern compilers) only accessible from a nethack4.org github link and the configure script (necessary to do the entire process) only accessible from Eric S. Raymond's site.
+
+# Directions for Linux or WSL
+- Extract c-intercal.tar.gz using the shell command `tar -xzvf c-intercal.tar.gz`. There should now be a folder called `c-intercal` in your current directory.
+  - It's very important you use this shell tool and not Windows archiving tools like 7-zip. There are some important permissions on the files that only Unix tools will retain.
+- Change to the new directory using `cd c-intercal`.
+- For these next steps, you need gnu automake, cmake, autoconf, bison, and flex.
+- Run `./configure` in the shell
+- Run `make` in the shell.
+- Run `make install` in the shell.
+- C-INTERCAL should now be installed on your system. Call it from anywhere with `ick`.
