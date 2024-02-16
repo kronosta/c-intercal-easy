@@ -4,7 +4,7 @@ C-INTERCAL can be a bit difficult to compile and install. Here's a combination o
 - Extract c-intercal.tar.gz using the shell command `tar -xzvf c-intercal.tar.gz`. There should now be a folder called `c-intercal` in your current directory.
   - It's very important you use this shell tool and not Windows archiving tools like 7-zip. There are some important permissions on the files that only Unix tools will retain.
 - Change to the new directory using `cd c-intercal`.
-- For these next steps, you need gnu automake, cmake, autoconf, bison, and flex.
+- For these next steps, you need the packages `build-essential`, `bison`, and `flex`. These are easy to get with the apt package manager on Ubuntu/Debian. Sometimes the `build-essential` package can be a bit tricky; you could try installing the packages separately (`gcc`, `g++`, `libc6-dev`, `make`, `dpkg-dev`) or consult [this thread](https://askubuntu.com/questions/398489/how-to-install-build-essential) for some possible solutions.
 - Run `./configure` in the shell
 - Run `make` in the shell.
 - Run `make install` in the shell.
